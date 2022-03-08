@@ -1,0 +1,139 @@
+nav {
+  display: flex;
+  background-color: rgb(226, 225, 225);
+  /* height: 7vh; */
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+nav div {
+  display: flex;
+}
+
+nav .nav-left {
+  flex: 50%;
+  align-items: center;
+}
+
+.nav-left ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right {
+  flex: 50%;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav-right a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 8px;
+}
+
+/* * {
+  background-color: rgb(160, 159, 159);
+} */
+form {
+  margin: auto;
+  width: 400px;
+  align-items: center;
+}
+
+.main {
+  font-weight: bold;
+  height: 93vh;
+  background-color: rgb(199, 198, 198);
+}
+.main h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.main .nama label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.nama input {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.email label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.email input {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.phone label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.phone input {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.subject label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.subject select {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.massage label {
+  font-weight: 700;
+  font-size: 19px;
+}
+.massage textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(230, 228, 228);
+  border: white;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+  height: 70px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 3px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}

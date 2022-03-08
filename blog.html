@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/cf540236df.js" crossorigin="anonymous"></script>
+    <script src="blog.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="./asset2/logo.png" alt="logo" />
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">My Project</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a href="form.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Project input -->
+    <div class="form-all">
+      <div class="form-container">
+        <h1>ADD MY PROJECT</h1>
+        <form>
+          <div class="projectname">
+            <label for="input-project">Project Name</label>
+            <input type="text" id="input-project" />
+          </div>
+          <div class="date">
+            <div class="start-date">
+              <label for="input-startdate">Start Date</label>
+              <input type="date" id="input-startdate" />
+            </div>
+            <div class="end-date">
+              <label for="input-enddate">End Date</label>
+              <input type="date" id="input-enddate" />
+            </div>
+          </div>
+          <div class="description">
+            <label for="input-description">Description</label>
+            <textarea type="text" id="input-description"></textarea>
+          </div>
+          <div class="technologies">
+            <p>Technologies</p>
+            <div class="input-technologies" id="grouptech">
+              <div class="tech-left">
+                <input type="checkbox" id="input-nodejs" name="technologies" value="nodeJs"/>
+                <label for="input-nodejs">Node Js</label>
+                <br><br>
+                <input type="checkbox" id="input-reactjs" name="technologies" value="reactJs" />
+                <label for="input-reactjs">React Js</label>
+                <!-- <input type="checkbox" id="input-nextjs" />
+              <label for="input-nextjs">Next Js</label> -->
+              </div>
+              <div class="tech-right">
+                <input type="checkbox" id="input-nextjs" name="technologies" value="nextJs"/>
+                <label for="input-nextjs">Next Js</label> 
+                <br><br>
+                <!-- <input type="checkbox" id="input-reactjs" />
+              <label for="input-reactjs">React Js</label> -->
+                <input type="checkbox" id="input-typescript" name="technologies" value="typescript" />
+                <label for="input-typescript">TypeScript</label>
+              </div>
+            </div>
+          </div>
+            <div class="image">
+              <label>Upload Image</label>
+              <div class="input-image-group">
+                <label for="input-image">
+                  <p>Choose</p>
+                  <img src="" alt="" />
+                </label>
+                <input type="file" id="input-image" hidden/>
+              </div>
+              <div class="button-group">
+                <button type="button" onclick="addBlog()" >Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <hr class="line"/>
+      </div>
+    </div>
+
+    <div class="list-content">
+        <h1>MY PROJECT</h1>
+    </div>
+    <div>
+      <div class="card-container" id="contents">
+        <div class="item-card">
+          <img src="./asset2/images2.jpg" alt=""/>
+          <div class="content-card">
+            <a href="detail.html"><h3>Dumbways Mobile App-2021</h3></a>
+                <div class="duration" >durasi 3 bulan</div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero deleniti repudiandae reprehenderit! </p>
+                <div class="checkbox">
+                  <i class="fa-brands fa-node-js"></i>
+                  <i class="fa-brands fa-react"></i>
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <br>
+                <div class="btn-group">
+                  <a href="#" class="btn-edit">edit</a>
+                    <a href="#" class="btn-delete">delete</a>
+                </div>
+          </div>
+        </div>
+         </div>
+      </div>
+      
+      
+    
+    
+    <!-- <div>
+        <div class="card-container" id="contents">
+          <div class="item-card">
+              <img src="./asset2/images2.jpg" alt=""/>
+              <div class="content-card">
+                <h3>Dumbways Mobile App-2021</h3>
+                <h4>durasi 3 bulan</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero deleniti repudiandae reprehenderit! </p>
+                <div class="checkbox">
+                  <i class="fa-brands fa-node-js"></i>
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn-edit">edit</a>
+                    <a href="#" class="btn-delete">delete</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div> -->
+  </body>
+</html>
