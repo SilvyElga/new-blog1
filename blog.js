@@ -21,25 +21,29 @@ function addBlog() {
 
   //   // console.log(checkboxes)
   // })
-
+  // var printicon = ""
 
   if (nodeJs){
-    nodeJs = (document.getElementById('input-nodejs').value);
+    // nodeJs = (document.getElementById('input-nodejs').value);
+    nodeJs ='<i class="fa-brands fa-node-js" value="nodeJs" id="input-nodeJs"></i>'
   }else {
     nodeJs = ""
   }
   if (reactJs){
-    reactJs = (document.getElementById('input-reactjs').value);
+    // reactJs = (document.getElementById('input-reactjs').value);
+    reactJs ='<i class="fa-brands fa-react" value="reactJs" id="input-reactJs"></i>'
   }else {
     reactJs = ""
   }
   if (nextJs) {
-    nextJs = (document.getElementById('input-nextjs').value);
+    // nextJs = (document.getElementById('input-nextjs').value);
+    nextJs = '<img value="nextJS" id="input-nextJs"  src="./asset2/nextjs_icon_132160.png"/>'
   }else {
     nextJs = ""
   }
   if (typeScript) {
-    typeScript = (document.getElementById('input-typescript').value);
+    // typeScript = (document.getElementById('input-typescript').value);
+    typeScript = '<img value="typescript" id="input-typescript" src="./asset2/typescript.png"/>'
   }else {
     typeScript = ""
   }
@@ -107,7 +111,10 @@ function renderBlog() {
       <div class="duration" > durasi ${blogs[i].postAt}</div>
           <p>${blogs[i].description}</p>
           <div class="checkbox">
-            <p>${blogs[i].nodeJs} ${blogs[i].reactJs} ${blogs[i].nextJs} ${blogs[i].typeScript}</p>
+          ${blogs[i].nodeJs}
+          ${blogs[i].reactJs}
+          ${blogs[i].nextJs}
+          ${blogs[i].typeScript}
           </div>
           <br>
           <div class="btn-group">
@@ -128,7 +135,10 @@ function firstBlog() {
     <div class="duration" >durasi 3 bulan</div>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero deleniti repudiandae reprehenderit! </p>
         <div class="checkbox">
-          <p>nodeJs, reactJs, nextJs, typeScript </p>
+        <i class="fa-brands fa-node-js"></i>
+        <i class="fa-brands fa-react"></i>
+        <img src="./asset2/nextjs_icon_132160.png"/>
+        <img src="./asset2/typescript.png"/>
         </div>
         <br>
         <div class="btn-group">

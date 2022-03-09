@@ -26,6 +26,9 @@ nav .nav-left {
   text-decoration: none;
   color: black;
 }
+.nav-left ul li a:hover {
+  font-weight: bold;
+}
 
 .nav-right {
   flex: 50%;
@@ -41,6 +44,9 @@ nav .nav-left {
   border-radius: 8px;
 }
 
+.nav-right a:hover {
+  background: rgb(162, 162, 243);
+}
 /* home start */
 
 .main-container {
@@ -260,11 +266,12 @@ nav .nav-left {
   display: flex;
   margin: 50px auto;
   width: 1200px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: row;
+  /* justify-content: space-around; */
   padding: 10px;
   flex-wrap: wrap;
-  /* background-color: brown; */
+  background-color: white;
 }
 
 .item-card {
@@ -275,6 +282,8 @@ nav .nav-left {
   /* flex-direction: row-reverse; */
   padding: 5px;
   box-shadow: 6px 11px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgb(235, 233, 233);
+  margin-right: 30px;
 }
 .content-card a {
   text-decoration: none;
@@ -292,6 +301,10 @@ nav .nav-left {
 
 .checkbox i {
   font-size: 30px;
+}
+
+.checkbox img {
+  width: 25px;
 }
 
 .btn-group a {
@@ -314,7 +327,7 @@ nav .nav-left {
   display: flex;
   width: 1200px;
   margin: auto;
-  background-color: aqua;
+  background-color: white;
 }
 
 .left-detail {
@@ -331,4 +344,5 @@ nav .nav-left {
   width: 1200px;
   margin: auto;
   padding: 30px;
+  text-align: justify;
 }
